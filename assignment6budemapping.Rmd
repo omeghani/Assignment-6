@@ -1,0 +1,49 @@
+---
+title: "Assignment 6 Bude Mapping"
+author: "Ozair Meghani"
+date: "4/2/2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggmap)
+library(tidyverse)
+library(magick)
+```
+
+#**Bude**
+
+##Bude is a small seaside resort town in north Cornwall, England, UK, in the civil parish of Bude-Stratton and at the mouth of the River Neet. It is a popular beach resort town with lovely surfing beaches as well as a beautiful cricket ground. Below are two maps of Bude, one watercolor map and one roadmap. On both maps you can see 3 green dots. The dot that is highest up marks the spot for Crooklets beach, the one below that marks the location of Bude North Cornwall Cricket Club, and the one below that marks the spot for Summerleaze beach. On the road map you will see a red line starting at Bude North Cornwall Cricket Club and extending north showing the route to a nearby pub called Crooklets Inn. 
+
+
+#**Watermap of Bude**
+```{r, echo=FALSE}
+readRDS("watermap.RDS")
+```
+
+#**Roadmap of Bude**
+```{r, echo=FALSE}
+readRDS("roadmap.RDS")
+```
+
+#**Bude North Cornwall Cricket Club**
+```{r, echo=FALSE}
+image_read('cricketpic.jpg')
+```
+
+##Bude North Cornwall Cricket Club is situated on the clifftops overlooking the Atlantic Ocean, and is quite simply one of the most stunning locations you could ever wish to visit, let alone play cricket at! Bude North Cornwall Cricket Club was founded in 1870. Over the years it has played host to Hockey matches, Tennis, Cricket and even used for Mortar practice in WW2!
+
+#**Crooklets Beach**
+```{r, echo=FALSE}
+image_read('crooklets.jpg')
+```
+
+##Crooklets is very popular with surfers and is home to the Bude Surf Life Saving Club.  The beach has great facilities including a large car park, level access and viewing area, a play area, skate park, beach cafe, showers, amusements and pubs close by. A wide expanse of golden sand is exposed at low tide, bordered by rocky outcrops ideal for rock-pooling. Crooklets is at the north side of Bude and can be reached by a short walk over the Summerleaze Down or down the hill from the town centre.
+
+#**Summerleaze Beach**
+```{r, echo=FALSE}
+image_read('summerleaze.jpg')
+```
+
+##Summerleaze has a unique appeal, not least because it is less than five minutes’ walk from the centre of Bude and the large car park leads directly to the sand dunes. The river, with its bobbing fishing boats, flanks the wide, sandy beach that is sheltered by the impressive breakwater, making the beach particularly popular with families and surfers.
